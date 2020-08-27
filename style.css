@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Abel,"Lucida Sans Unicode","Lucida Grande",Tahoma, Verdana,sans-serif;
+    line-height: 20px;
+    margin: 0;
+    font-size: 18px;
+    color: #777;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 4px 10px 2px rgba(90, 90, 90, 0.4);
+    border-radius: 0 0 3px 3px;
+    background-color: #fafafa;
+    width: 800px;
+}
+
+.header-block {
+    font-family: "Times New Roman";
+    color: #999;
+    font-weight: 900;
+}
+
+.input-form {
+    width: 90%;
+}
+
+.todo-list-1,
+.completed-todolist {
+    width: 710px;
+}
+
+li {
+    display: inline-block;
+    width: 600px;
+    transition: .1s;
+}
+
+li:hover {
+    background: #aecfe4;
+}
+
+li:hover img {
+    display: inline;
+}
+
+.todo-list-item,
+.completed-list-item {
+    list-style-type: none;
+}
+
+.todo-list-block,
+.completed-list {
+    padding-left: 20px;
+}
+
+.progressbar-block {
+    position: relative;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+progress {
+    width: 610px;
+    -webkit-appearance: none;
+}
+
+.green::-webkit-progress-bar {
+    background-color: #fafafa;
+    height: 18px;
+    border-radius: 9px;
+}
+
+.green::-webkit-progress-value {
+    height: 4px;
+    transition: width .5s;
+    background: #b9ecb5;
+    display: block;
+    float: right;
+  }
+
+.blue::-webkit-progress-bar {
+    background-color: #fafafa;
+}
+
+.blue::-webkit-progress-value {
+    height: 4px;
+    transition: width .5s;
+    background: #b9d4ed;
+}
+
+.todo-list-img-close {
+    cursor: pointer;
+    width: 18px;
+    vertical-align: bottom;
+    float: right;
+    display: none;
+}
+
+.delete-img {
+    float: right;
+    padding-right: 60px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+  }
+
+.list-item {
+    list-style-type: none;
+}
+
+

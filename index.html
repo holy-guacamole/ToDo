@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Today's Tasks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <div class="header-block">
+                <h1>Today's Tasks</h1>
+            </div>
+    
+            <div class="todo-list-block">
+                <div class="title-block">
+                    <h3>To do:</h3>
+                </div>
+    
+                <div class="progressbar-block">
+                    <progress id="progressbar-todo" class="progressbar green" value="" max="100"></progress>
+                </div>
+    
+                <div class="todo-list-empty">
+                    <span>No items. Why not add one below.</span>
+                </div>
+
+                <ul id="todolist" class="todo-list-1"></ul>
+    
+                <form class="item-form" action="" method="post">
+                    <input class="input-form" placeholder="Type and hit Enter to add" required>
+                </form>
+            </div>
+    
+            <div class="completed-list">
+                <div class="title-block">
+                    <h3>Done:</h3>
+                </div>
+    
+                <div class="progressbar-block">
+                    <progress id="progressbar-completed" class="progressbar blue" value="" max="100"></progress>
+                </div>
+    
+                <div class="progress-bar"></div>
+
+                <div class="compeleted-list-empty">
+                    <span>No done items.</span>
+                </div>
+
+                <ul id="completedlist" class="completed-todolist">
+                    <li class="completed-list-item item-li editable">
+                        
+                    </li>
+                </ul>
+                <div class="items-remove">
+                </div>
+            </div>
+    
+            <div class="delete-block">
+                <img class="delete-img" src="https://img.icons8.com/small/32/000000/delete.png"/>
+            </div>
+        </div>
+
+    </div>
+
+    <template id="list-template" class="todo-list-1">
+        <li class="list-item editable">
+            <input class="todo-list-input" type="checkbox">
+            <span></span>
+            <img class="todo-list-img-close" src="https://img.icons8.com/material-outlined/24/000000/close-window.png"/>
+        </li>
+    </template>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
